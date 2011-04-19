@@ -14,6 +14,10 @@ group :development do
     gem 'annotate-models', '1.0.4'
 end
 
+group :production, :staging do
+  gem "pg", "0.9.0"
+end
+
 group :test do
     gem 'rspec', '2.5.0'
     gem 'webrat', '0.7.1'
